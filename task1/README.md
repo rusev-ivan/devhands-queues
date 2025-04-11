@@ -1,21 +1,21 @@
-Start docker containers
+Поднять сервисы в docker
 ```shell
 make up
 ```
 
-Down docker containers
+Остановить и удалить контейнеры
 ```shell
 make down
 ```
 
-Start Kafka producing
+Запустить Kafka producing
 ```shell
 make run-kafka-producer
 
 docker-compose exec app go run main.go kafka producer --topic=queues --period=50ms
 ```
 
-Start Kafka consuming
+Запустить Kafka consuming
 ```shell
 make run-kafka-consumer
 
